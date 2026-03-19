@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand: #FFD700;
+    --brand-dim: #cc9900;
+    --dark: #080808;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #080808;
+    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+  }
+}
+
+@layer utilities {
+  .glow-gold { text-shadow: 0 0 30px #FFD70088; }
+  .border-glow { box-shadow: 0 0 20px #FFD70033; }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255,215,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,215,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
