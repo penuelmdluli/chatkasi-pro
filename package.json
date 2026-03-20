@@ -1,7 +1,10 @@
 {
   "name": "chatkasi-pro",
   "private": true,
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
@@ -11,5 +14,11 @@
     "turbo": "^2.0.0",
     "typescript": "^5.4.0"
   },
-  "engines": { "node": ">=18.0.0" }
+  "packageManager": "npm@10.9.3",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@next/swc-win32-x64-msvc": "^16.2.0"
+  }
 }

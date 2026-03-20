@@ -14,9 +14,7 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./src/*"],
-      "@chatkasi/ui": ["../../packages/ui/src"],
-      "@chatkasi/types": ["../../packages/types/src"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
